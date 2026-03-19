@@ -1,15 +1,15 @@
-# 📦 Inventory Management System
+# Inventory Management System
 
 ¡Bienvenido a mi proyecto de gestión de inventarios! Este es un programa desarrollado en **Python** diseñado para facilitar el registro, control y análisis estadístico de inventario de una empresa.
 
 ---
 
-## 🚀 Descripción
+## Descripción
 Este sistema permite interactuar con un menú dinámico para gestionar un conjunto de productos. El programa garantiza la integridad de los datos mediante validaciones y ofrece un resumen financiero del inventario total.
 
 ---
 
-## 🛠️ Tecnologías y Conceptos Utilizados
+## Tecnologías y Conceptos Utilizados
 
 Para el desarrollo de esta herramienta, apliqué conceptos fundamentales de programación que aseguran un código limpio y funcional:
 
@@ -27,7 +27,7 @@ Para el desarrollo de esta herramienta, apliqué conceptos fundamentales de prog
 
 ---
 
-## 📋 Cómo funciona
+## Cómo funciona
 
 1.  **Registro con Validación:** Permite añadir productos asegurando que el precio sea decimal y la cantidad sea un entero.
 2.  **Visualización de Inventario:** Listado organizado de todos los productos registrados.
