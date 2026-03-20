@@ -7,7 +7,7 @@ register_more_sales = True
 
 try:
          while register_more_sales == True:
-            print("\n----------------------- NUEVA VENTA ---------------------------")
+            print("\n\n----------------------- NUEVA VENTA ---------------------------\n\n")
 
             client_name = input("Ingrese aqui el nombre del cliente: ")
             unit_price = float(input("Ingrese aqui el precio unitario del producto ($): "))
@@ -23,7 +23,7 @@ try:
 
             total = subtotal - discount
 
-            print("---------------------------------------------------------------")
+            print("\n\n---------------------------------------------------------------")
             print("|               RESUMEN DE LA TRANSACCION                     |")
             print("---------------------------------------------------------------")
 
@@ -32,10 +32,11 @@ try:
             print(f"Descuento Aplicado:                            ${discount:.2f}")
             print(f"Total final a pagar:                           ${total:.2f}   ")
 
-            print("--------------------------------------------------------------")
-            print("               ¡Venta registrada exitosamente!                ")
+            print("\n\n------------------------------------------------------------")
+            print("\n\n               ¡Venta registrada exitosamente!              ")
+            
 
-            print("                    ¡Gracias por su compra!                   ")
+            print("\n\n                    ¡Gracias por su compra!                 \n\n")
 
 
 

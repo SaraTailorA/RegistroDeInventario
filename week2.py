@@ -1,9 +1,12 @@
-from library import add_product, show_inventory, calculate_statistics
+from library import *
+
+# Lista para almacenar los productos
+inventory = []
 
 # Variable para controlar el menú
 option = ""
 
-# Bucle principal (SIN while True)
+# Bucle principal para mostrar menú
 while option != "4":
     print("=" *40 )
     print("                   MENU                  ")
@@ -15,15 +18,15 @@ while option != "4":
 
     option = input("\nChoose an option: ")
 
-    # Condicionales
+    # Condicionales para escoger la opción del menú
     if option == "1":
-        add_product()
+        add_product(inventory)
 
     elif option == "2":
-        show_inventory()
+        show_inventory(inventory)
 
     elif option == "3":
-        calculate_statistics()
+        calculate_statistics(inventory)
 
     elif option == "4":
         print("Closing program...")

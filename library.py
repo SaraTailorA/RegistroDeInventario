@@ -1,12 +1,9 @@
-# Lista para almacenar los productos (ahora vive aquí)
-inventory = []
-
 # Función para agregar un producto
-def add_product():
+def add_product(inventory):
     # Solicitar nombre del producto
     name = input("Enter product name: \n")
 
-    # Validación simple de precio y cantidad
+    # Validación precio y cantidad
     try:
         price = float(input("Enter product price $: \n"))
         quantity = int(input("Enter product quantity: \n"))
@@ -28,7 +25,7 @@ def add_product():
 
 
 # Función para mostrar el inventario
-def show_inventory():
+def show_inventory(inventory):
     # Verificar si el inventario está vacío
     if len(inventory) == 0:
         print("\nInventory is empty.\n")
@@ -44,7 +41,7 @@ def show_inventory():
         print()
 
 # Función para calcular estadísticas
-def calculate_statistics():
+def calculate_statistics(inventory):
     total_value = 0
     total_quantity = 0
 

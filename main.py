@@ -36,7 +36,10 @@ print("Total cost $:",       total_cost)
 # Después de recibir los valores correcto, calcula el costo total multiplicando
 # el precio por la cantidad y finalmente muestra los resultados en la consola.
 
-from library import add_product, show_inventory, calculate_statistics
+from library import *
+
+# Lista para almacenar los productos
+inventory = []
 
 # Variable para controlar el menú
 option = ""
@@ -55,13 +58,13 @@ while option != "4":
 
     # Condicionales
     if option == "1":
-        add_product()
+        add_product(inventory)
 
     elif option == "2":
-        show_inventory()
+        show_inventory(inventory)
 
     elif option == "3":
-        calculate_statistics()
+        calculate_statistics(inventory)
 
     elif option == "4":
         print("Closing program...")
