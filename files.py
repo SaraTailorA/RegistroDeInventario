@@ -6,6 +6,10 @@ def save_csv(inventory, file_name):
     if len(inventory) == 0:
         print("Inventory is empty, nothing to save.\n")
         return
+    # Si el texto NO termina en .csv, se lo pegamos al final automáticamente.
+    if not file_name.lower().endswith('.csv'):
+        file_name = file_name + ".csv"
+        print(f"Auto-corrected file name to: {file_name}")
 
     try:
         # 'with' abre el archivo y lo cierra automáticamente al terminar

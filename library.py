@@ -6,17 +6,19 @@ def add_product(inventory):
     name = input("Enter product name: \n").strip()
 
     try:
+        # 1. Pedimos y validamos el precio INMEDIATAMENTE
         price = float(input("Enter product price $: \n"))
-        quantity = int(input("Enter product quantity: \n"))
-
         if price < 0:
-            print("Price cannot be negative.\n")
-            return
+            print("Error: Price cannot be negative.\n")
+            return  # Lo expulsa al menú ANTES de pedir la cantidad
 
+        # 2. Si el precio estuvo bien, AHORA SÍ pedimos la cantidad
+        quantity = int(input("Enter product quantity: \n"))
         if quantity < 0:
-            print("Quantity cannot be negative.\n")
-            return
+            print("Error: Quantity cannot be negative.\n")
+            return  # Lo expulsa al menú si la cantidad es negativa
 
+        # 3. Si todo salió bien, guardamos
         product = {
             "name": name,
             "price": price,
@@ -25,8 +27,6 @@ def add_product(inventory):
 
         inventory.append(product)
         print("\nProduct added successfully.\n")
-
-    # Usamos ValueError para atrapar solo errores de conversión a int/float
     except:
         print("\nError: Invalid input. You must enter numbers for price and quantity.\n")
 

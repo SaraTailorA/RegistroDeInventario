@@ -51,7 +51,7 @@ while option != "9":
         loaded_inventory = load_csv(file_name)
         
         # Si se cargó información correctamente, preguntamos qué hacer con ella
-        if loaded_inventory is not None:
+        if loaded_inventory:
             choice = input("Overwrite current inventory? (Y/N): ").strip().upper()
             
             if choice == "Y":
